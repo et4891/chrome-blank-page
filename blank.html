@@ -21,6 +21,7 @@
         .hero__content {
             position: fixed;
             top: 50%;
+            left: 30%;
             transform: translateY(-50%);
         }
 
@@ -58,8 +59,25 @@
             animation: fall 45s infinite linear;
         }
 
-        #logo {
+        .logo {
             width: 330px;
+        }
+
+        .bottom {
+            /* display: none; */
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.5s linear;
+        }
+
+        /* .top:hover{
+            display: none;
+        } */
+
+        .top:hover+.bottom {
+            visibility: visible;
+            /* display: block; */
+            opacity: 1;
         }
 
         @keyframes fall {
@@ -70,7 +88,7 @@
 
         }
     </style>
-    <title>Document</title>
+    <title>ET</title>
 </head>
 
 <body>
@@ -150,7 +168,8 @@
         </div>
 
         <div class="hero__content">
-            <img src='./et.png' id='logo' />
+            <img src='./et.png' class="top logo" />
+            <img src='./happy-coding500x500.png' class="bottom logo" />
         </div>
 
     </div>
