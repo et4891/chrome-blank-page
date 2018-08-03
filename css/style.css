@@ -16,7 +16,7 @@ body {
 .hero__content {
     position: fixed;
     top: 50%;
-    left: 30%;
+    left: 35%;
     transform: translateY(-50%);
 }
 
